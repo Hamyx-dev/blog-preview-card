@@ -38,6 +38,10 @@ I changed the page background from one flat color to a linear-gradient going fro
 
 I gave the avatar image a border-radius equal to half of its width and height, which is what turns a square image into a perfect circle.
 
+### Hover effect on the badge
+
+I added a hover effect on the category badge. I put a transition on the normal span rule first, then wrote a separate span:hover rule that changes the background to a slightly darker yellow. I learnt that the transition has to go on the normal state and not inside the hover rule, because the transition tells the browser how to animate any change to that element, and if it is only inside hover it will only animate going in, not coming back out smoothly.
+
 ## Mistakes I Made and Fixed
 
 1. I tried to write @keyframes inside the .card rule instead of as its own separate block, which is not valid CSS.
